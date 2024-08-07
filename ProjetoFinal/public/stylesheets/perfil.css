@@ -1,0 +1,179 @@
+
+body{
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    color: rgb(25, 24, 24);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: black;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/backgrounsite.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.cabecalio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(207, 207, 207);
+    width: 97%;
+    height: 8vh;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.menu{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu svg{
+    width: 50px;
+    height: 70px;
+}
+.menu button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.notificacao svg{
+    width: 30px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+
+/*Conteudo site perfil*/
+.informacoesUser{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 10px;
+}
+.dadosUser{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    height: 80vh;
+    font-size: 25px;
+
+}
+.nomeUser{
+    display: flex;
+    align-items: center;
+}
+.nomeUser label {
+    margin-left: 20px;
+}
+.emailUser{
+    display: flex;
+    align-items: center;
+}
+.emailUser label {
+    margin-left: 20px;
+}
+.senhaUser{
+    display: flex;
+    align-items: center;
+}
+.senhaUser label{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.botoesAlteradados button{
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 400px;
+    cursor: pointer;
+}
+
+/*Configurações do aside do menu responsivo*/
+.menuLateral{
+    display: none;
+}
+/*Responsividade*/
+@media (max-width: 800px) {
+
+.notnomperf,
+.dataeHora,
+.profilepicture,
+.notificacao,
+.menuLateral {
+    display: none;
+}
+
+.cabecalio{
+    width: 92%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.menu button{
+    border: none;
+    background: none;
+}
+    .menuLateral{
+        margin-top: 10px;
+        position: fixed;
+        top: 0;
+        left: 10px;
+        width: 400px;
+        height: 99%;
+        background-color:rgb(207, 207, 207);;
+        border: 8px solid #808080;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding-top: 20px;
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .menuLateral div{
+        padding: 0;
+        margin: 0;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+    }
+    .menuLateral div svg{
+        width: 35px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+    }
+    .menuLateral div label{
+        margin-left: 15px;
+    }
+
+    .menuLateral .returnTelaPrincipal .menu{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+
+}

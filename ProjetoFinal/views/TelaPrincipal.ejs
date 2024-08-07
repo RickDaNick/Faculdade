@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commits!</title>
+    <link rel="stylesheet" href="stylesheets/TelaPrincipal.css">
+</head>
+<body>
+    <header class="cabecalio" id="cabecalio">
+        <div class="menu" id="iconeCasaMenu"></div>
+
+        <h1 class="dataeHora" id="dataeHora"></h1>
+
+        <section class="notnomperf">
+
+            <div class="notificacao">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                  </svg>
+            </div>
+
+        <form action="/Perfil" method="get" name="perfilusuario">
+        <button class="perfilUser">
+        <div class="profilepicture">
+            <label for="perfilUser" class="nomeUsuario">Nome_Usuario:</label>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+        </div>
+        </button>
+        </form>
+
+
+        </section>
+    </header>
+
+    <!--aqui vai as configurações do aside responsivo do sistema-->
+
+    <aside class="menuLateral" id="menuLateral">
+        <div class="menuclose" id="menuclose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <label for="menuclose">Fechar Menu Lateral.</label>
+        </div>
+
+        <div class="returnTelaPrincipal">
+            <!--adicionarfuncao para as demais telas, aqui não é necessario-->
+        </div>
+
+        <div class="Asidenotificacao">
+            <svg id="notificacaoAside" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+            </svg>
+            <label for="notificacaoAside">Notificações.</label>
+        </div>
+
+        <form action="/Perfil" method="get" name="perfilusuario">
+            <button class="perfilUser">
+                <div class="profilepicture">
+                    <svg id="fotoperfilaside" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                    </svg>
+                    <label for="fotoperfilaside">Nome_Usuario.</label>
+                </div>
+            </button>
+        </form>
+
+    </aside>
+    <!--aqui termina as configurações do aside responsivo do sistema-->
+
+    <div class="conteudoPagina">
+
+        <div class="conteudoDireito">
+            <div class="textos">
+            <h1 class="textoApresentacao">Este é o Do It Your Way!</h1>
+            <hr>
+                <p class="mensagem">Projeto desenvolvido por Gabriel Santos Menegol, Alan Baruffi e Derick Julian Perin
+                Desenvolvido em conjunto com o Instituto Federal do Rio Grande do Sul (IFRS) nas matérias de Programação III e
+                Projeto Integrador. <br> <br> Nosso projeto consiste em um programa que tem como objetivo organizar a rotina diária
+                de seus usuários, permitindo criar tarefas com expecificações, datas e diversas outras maneiras de reorganizar seu dia-a-dia!
+            </div>
+
+            <form action="/novasTarefas" method="get">
+                <button type="submit" class="novoProjeto">+ Novo Projeto</button>
+            </form>
+    </div>
+
+        <form action="/Tarefa" method="get" class="projetosAnteriores">
+                <div class="tarefaRecent1">
+                    <button>
+                        <h1 class="nomeTarefa1">Financeiro:</h1>
+                        <p class="descricaoTaref">   Organize suas finanças</p>
+                    </button>
+                </div>
+
+                <div class="tarefaRecent2">
+                    <button>
+                    <h1 class="nomeTarefa1">Academia:</h1>
+                    <p class="descricaoTaref">Organize sua rotina de treinos</p>
+                </button>
+                </div>
+
+
+            <div class="tarefaRecent3">
+                <button>
+                <h1 class="nomeTarefa1">Eventos:</h1>
+                <p class="descricaoTaref">Programe aqui seus próximos eventos!</p>
+            </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="/javascripts/JavitoPrincipal.js"></script>
+</body>
+</html>

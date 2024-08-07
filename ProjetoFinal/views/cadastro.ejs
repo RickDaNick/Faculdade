@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments! Cadastro</title>
+    <link rel="stylesheet" href="stylesheets/Cadastro.css">
+</head>
+<body>
+    <h1 class="TituloSite">Crie sua Conta</h1>
+    <section class="Cadastro">
+        <form class="LoginInputs" action="/Cadastro" method="post" >
+            <input type="text" placeholder="Nome:" class="NomeUser" id="NomeUser" name="nome" required>
+            <input type="email" placeholder="E-mail:" class="input_email" id="input_email" name="email" required>
+            <section class="senha">
+                <input type="password" placeholder="Senha: " class="input_senha" id="input_senha" name="senha" required>
+                <button class="RevelarSenhaButton" id="RevelarSenhaButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Iconezoio" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                    </svg>
+                </button>
+            </section>
+            <section class="senhaConfirm">
+                <input type="password" placeholder="Confirme a Senha: " class="input_senhaConfirm" id="input_senhaConfirm" name="senhaConfirm" required>
+                <button class="RevelarSenhaButtonCONF" id="RevelarSenhaButtonCONF">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="IconezoioCONF" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7"/>
+                    </svg>
+                </button>
+            </section>
+            <input type="submit" class="botaoCriarConta" id="botaoCriarConta"></input>
+        </form>
+    </section>
+    <script src="/javascripts/JavitoCadastro.js"></script>
+</body>
+</html>
